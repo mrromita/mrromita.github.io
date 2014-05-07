@@ -21,7 +21,6 @@
         <%= partial "_layouts/nav" %>
       </div>
     </header>
-    <div class="background"> 
 
     <main class="site-main container">
       <%= yield %>
@@ -30,15 +29,13 @@
     <footer class="site-footer">
       <div class="container">
         <p>
-            PARA ACCERORIOS VISITAMOS EN MERCADO HIDALGO LOCAL 15 MODACEL
-            <br />
+          <br />
             <% link_to 'https://www.facebook.com/pages/Videoclub-Mr-Romita/396665733765797', target: '_blank' do %>
-             <%= image_tag 'facebook1.png' %>
+             <%= image_tag 'facebook1.png' %> Video Club Mr.Romita
             <% end %>
-        </p>
+            Rayon No.3 Zona Centro</p>
       </div>
     </footer>
-  </div>
 
     <%= javascript_include_tag  "all" %>
     <%= yield_content :js %>
