@@ -1,6 +1,7 @@
 // ------------------------------------------------------------
 // Layout
 // ------------------------------------------------------------
+
 .site-header {
 	@include clearfix;
 	background-color: $white-smoke;
@@ -33,7 +34,11 @@
 // ------------------------------------------------------------
 // Site Nav
 // ------------------------------------------------------------
-
+em {display: none;
+@include media($medium-screen) {
+  display: block;
+}
+}
 .site-nav {
 	@include clearfix;
 
@@ -47,6 +52,13 @@
 		}
 		@include media($medium-screen) {
 			float: left;
+		}
+	}
+	.logo {
+		display: block;
+		margin-top: -30px;
+		@include media($medium-screen) {
+			display: none;
 		}
 	}
 
@@ -63,7 +75,7 @@
 		@include media($medium-screen) {
 			height: auto;
 			float: right;
-					
+			margin-top: 70px;	
 		}
 
 
