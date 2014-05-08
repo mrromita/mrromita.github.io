@@ -20,13 +20,13 @@
 		height: 400px;
 	}
 
-	img {
-		width: 100%;
-		height: auto;
-		@include media($medium-screen) {
-			margin-top:-24%;  // positions viewable portion of the image
-		}
-	}
+	 img {
+	background: url(images/peliculas1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 }
 
 
