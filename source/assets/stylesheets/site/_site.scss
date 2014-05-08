@@ -21,13 +21,13 @@
 		height: 400px;
 	}
 
-	 img {
-	background: url(images/peliculas1.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+	img {
+		width: 100%;
+		height: auto;
+		@include media($medium-screen) {
+			margin-top:-24%;  // positions viewable portion of the image
+		}
+	}
 }
 
 
@@ -95,9 +95,10 @@
 }
 a.site-title {
 	display: none;
+	font-size: 2.5em;
 	@include media($medium-screen) {
 		display: block;
-		font-size: 2.5em;
+		font-size: 2.0em;
 		margin-top: 0.4em;
 		color: $base-font-color;
 		text-transform:uppercase;
