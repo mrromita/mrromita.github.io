@@ -9,6 +9,25 @@
 .site-main{}
 .site-footer{}
 
+// ------------------------------------------------------------
+// movies
+// ------------------------------------------------------------
+
+.movies {
+	overflow: hidden;
+
+	@include media($medium-screen) {
+		height: 400px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		@include media($medium-screen) {
+			margin-top:-24%;  // positions viewable portion of the image
+		}
+	}
+}
 
 
 // ------------------------------------------------------------
@@ -43,7 +62,8 @@
 
 		@include media($medium-screen) {
 			height: auto;
-			float: right;		
+			float: right;
+					
 		}
 
 
