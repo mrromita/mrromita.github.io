@@ -34,11 +34,7 @@
 // ------------------------------------------------------------
 // Site Nav
 // ------------------------------------------------------------
-em {display: none;
-@include media($medium-screen) {
-  display: block;
-}
-}
+
 .site-nav {
 	@include clearfix;
 
@@ -56,7 +52,6 @@ em {display: none;
 	}
 	.logo {
 		display: block;
-		margin-top: -30px;
 		@include media($medium-screen) {
 			display: none;
 		}
@@ -75,7 +70,7 @@ em {display: none;
 		@include media($medium-screen) {
 			height: auto;
 			float: right;
-			margin-top: 70px;	
+					
 		}
 
 
