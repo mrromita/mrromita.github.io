@@ -52,18 +52,6 @@
 			float: left;
 		}
 	}
-	.logo {
-		display: block;
-		@include media($medium-screen) {
-			display: none;
-		}
-	}
-
-	.site-logo {
-		display: block;
-		border-radius: 100%;
-		margin: auto;
-	}
 
 	.nav-links {
 		height: 0;
