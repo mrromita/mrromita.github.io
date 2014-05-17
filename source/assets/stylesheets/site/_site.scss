@@ -28,7 +28,7 @@
 		width: 100%;
 		height: auto;
 		@include media($medium-screen) {
-			margin-top:-24%;  // positions viewable portion of the image
+			margin-top:-10%;  // positions viewable portion of the image
 		}
 	}
 }
@@ -69,6 +69,7 @@
 	.nav-links {
 		height: 0;
 		overflow: hidden;
+		margin-top: 65px;
 
 		@include media($medium-screen) {
 			height: auto;
